@@ -68,17 +68,9 @@ include('includes/easyblog.php');
 
     <div class="container">
 
-      <?=$easyblog_posts?>
-	
-	<div class="navigation">
-		<? if(!$single) { ?>
-			<? if($easyblog_previous) {	?> <p class="previous-link"><?=$easyblog_previous?></p>	<? } ?>
-			<? if($easyblog_next) {	?>	<p class="next-link"><?=$easyblog_next?></p> <? } ?>
-		<? } ?>
-		<? if($single) { ?>
-			<p class="previous-link"><a href="<?=$config['easyblog-filename']?>">&laquo; Return to all posts</a></p>
-		<? } ?>
-		<div class="clear"></div>
+      <!-- Add in your own stuff here, Raw HTML must be used. -->
+
+      
 	</div>
 	
     </div>
