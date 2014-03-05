@@ -3,6 +3,4 @@ Disallow: /adm
 Disallow: /includes
 Disallow: /assets
 Disallow: /install.php
-Disallow: contact.php
-Disallow: about.php
 Disallow: /changes.php
