@@ -54,24 +54,24 @@ ob_start();
 	
 	if($install_step == 1 || $install_step == 0)
 	{
-		echo 'Connecting to EasyBlog servers. <b>Status</b>: ';
+		echo 'Connecting to MySQL Server. <b>Status</b>: ';
 
 		if(!$link)
 		{
 			echo $fail;
 			echo(sprintf($sql_error, mysql_error()));
-			echo(sprintf($tip, 'An error occured. Please contact a member of our staff.'));		
+			echo(sprintf($tip, 'An error occured. Please check your credentials in /includes/config.php'));		
 		}
 		else 
 		{
 			echo $success;
-			echo 'Testing connection to EasyBlog database servers. <b>Status</b>: ';
+			echo 'Opening database. <b>Status</b>: ';
 			
 			if(!$dbl)
 			{
 				echo $fail;
 				echo(sprintf($sql_error, mysql_error()));
-				echo(sprintf($tip, 'An error occured. Please contact a member of or staff.'));
+				echo(sprintf($tip, 'An error occured. Please check your credentials in /includes/config.php'));		
 			}
 			else
 			{
@@ -118,7 +118,7 @@ ob_start();
 		{	
 			echo $fail;
 			echo(sprintf($sql_error, mysql_error()));
-			echo(sprintf($tip, 'An error occured. Please contact an EazyBlog staff member via our <a href="http://eazyblog.oxafemble.me/">website.</a>'));
+			echo(sprintf($tip, 'An error occured. Be sure that there\'s nothing in the dabatase already.'));		
 		}
 		else
 		{
@@ -130,7 +130,7 @@ ob_start();
 					('date-format', 'F d, Y', 'Date format as per the PHP date function <a href=\"http://www.php.net/date\">here</a>'),
 					('password', '5f4dcc3b5aa765d61d8327deb882cf99', 'Admin password'),
 					('easyblog-filename', 'index.php', 'Name of the file which easyblog.php is included into'),
-					('use-modrewrite', 1, 'Use modrewrite for post URLs - use 1 for yes, 0 for no.')";
+					('use-modrewrite', 0, 'Use modrewrite for post URLs - use 1 for yes, 0 for no.')";
 			
 			$result = mysql_query($sql, $link);	
 			
@@ -143,7 +143,7 @@ ob_start();
 			{
 					echo $fail;
 					echo(sprintf($sql_error, mysql_error()));
-					echo(sprintf($tip, 'An error occurred. Please contact a member of or staff.'));
+					echo(sprintf($tip, 'An error occurred.'));
 			}
 			else
 			{
@@ -164,7 +164,7 @@ ob_start();
 			<a class="btn btn-primary" href="index.php">View your new blog</a>
 			<a class="btn btn-success" href="adm/admin.php">Login to the Admin Panel</a>
 			</p>
-				<p><strong>This file (Install.php) will be deleted. Please do not use this page again.</strong></p>
+				<p><strong>Please delete install.php for security reasons.</strong></p>
 			</code>
 				
 <?
