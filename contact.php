@@ -16,8 +16,6 @@
  * limitations under the License.
  */
     
-define('IN_BLOG', true);
-define('PATH', '');
 include('includes/config.php');
 ?>
 <!DOCTYPE html>
