@@ -58,8 +58,8 @@ include('includes/config.php');
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li><a href="index.php">Home</a></li>
-              <li><a href="../about.php">About</a></li>
-              <li class="active"><a href="../contact.php">Contact</a></li>
+              <li><a href="about.php">About</a></li>
+              <li class="active"><a href="contact.php">Contact</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
