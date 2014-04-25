@@ -22,14 +22,12 @@ include('includes/config.php');
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home / <?php echo $siteTitle ?></title>
+    <title>Contact / <?php echo $siteTitle; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My personal blog">
     <meta name="author" content="<?php echo $userName ?>">
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <script type="text/javascript" src="../assets/js/dialog.js"></script>
-
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <style>
       body {
         padding-top: 60px;
@@ -61,7 +59,19 @@ include('includes/config.php');
               <li><a href="about.php">About</a></li>
               <li class="active"><a href="contact.php">Contact</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="container">
+
+      <!-- Working contact form will be here... soon. -->
+
+      
+  </div>
+  
+    </div>
+    <script src="assets/js/jquery.js"></script>
+  </body>
+</html>

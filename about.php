@@ -16,15 +16,13 @@
  * limitations under the License.
  */
     
-define('IN_BLOG', true);
-define('PATH', '');
-include('includes/easyblog.php');
+include('includes/config.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Home / <?php echo $siteTitle; ?></title>
+    <title>About / <?php echo $siteTitle; ?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="My personal blog">
     <meta name="author" content="<?php echo $userName ?>">
@@ -57,8 +55,8 @@ include('includes/easyblog.php');
           <a class="brand" href="#"><?php echo $siteTitle ?></a>
           <div class="nav-collapse collapse">
             <ul class="nav">
-              <li class="active"><a href="index.php">Home</a></li>
-              <li><a href="about.php">About</a></li>
+              <li><a href="index.php">Home</a></li>
+              <li class="active"><a href="about.php">About</a></li>
               <li><a href="contact.php">Contact</a></li>
             </ul>
           </div>

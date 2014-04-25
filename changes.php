@@ -1,3 +1,7 @@
+#
+#	This file is useless now and probably will be deleted... eventually.
+#
+
 EasyBlog File Changes:
 
 File:                    Line:              Date:          Changes:
